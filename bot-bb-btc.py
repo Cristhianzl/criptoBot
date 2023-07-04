@@ -113,14 +113,15 @@ def main():
     res = requests.get(marketprice)
     data = res.json()
 
+    print("data:", data)
     
-    print("Variation: ", data['priceChangePercent'])
+    # print("Variation: ", data['priceChangePercent'])
 
-    print("Coin: ", TRADE_SYMBOL)
-    print("BB: ", round(bb_1m[0],2), round(bb_1m[2],2))
-    print("Preço: ", price_now)
-    print("Total de lucro: ", round(total_trade,4))
-    print("Em posição: ", in_position)
+    # print("Coin: ", TRADE_SYMBOL)
+    # print("BB: ", round(bb_1m[0],2), round(bb_1m[2],2))
+    # print("Preço: ", price_now)
+    # print("Total de lucro: ", round(total_trade,4))
+    # print("Em posição: ", in_position)
 
     #configurar as ordens
 #if variation > 0:
